@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+      <defs>
+        <linearGradient id="mesh" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#334155" />
+          <stop offset="100%" stop-color="#1E293B" />
+        </linearGradient>
+        <filter id="org-shadow">
+          <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.14" />
+        </filter>
+      </defs>
+      <rect width="600" height="500" fill="#F8FAFC" rx="24"/>
+      <g transform="translate(130, 110)" filter="url(#org-shadow)">
+        <!-- Back File Slot -->
+        <rect x="20" y="20" width="300" height="140" rx="10" fill="#1E293B"/>
+        <!-- Sticking notebooks out of back slot -->
+        <rect x="40" y="-20" width="100" height="120" rx="6" fill="#3B82F6"/>
+        <rect x="155" y="-10" width="120" height="110" rx="6" fill="#10B981"/>
+        <!-- Main body / front trays -->
+        <rect x="0" y="80" width="340" height="190" rx="14" fill="url(#mesh)"/>
+        <!-- Left Pen Cup compartment -->
+        <rect x="20" y="105" width="80" height="145" rx="8" fill="#0F172A"/>
+        <!-- Pens sticking out -->
+        <line x1="45" y1="60" x2="55" y2="140" stroke="#EF4444" stroke-width="8" stroke-linecap="round"/>
+        <line x1="65" y1="45" x2="65" y2="140" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+        <line x1="85" y1="55" x2="75" y2="140" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+        <!-- Middle Phone / Sticky note stand -->
+        <rect x="120" y="105" width="95" height="145" rx="8" fill="#0F172A"/>
+        <rect x="135" y="130" width="65" height="85" rx="6" fill="#FEF08A"/>
+        <!-- Right Drawer / Accessory tray -->
+        <rect x="235" y="105" width="85" height="65" rx="8" fill="#0F172A"/>
+        <rect x="235" y="185" width="85" height="65" rx="8" fill="#0F172A"/>
+        <!-- Drawer silver pull handle -->
+        <line x1="262" y1="218" x2="292" y2="218" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+      </g>
+    </svg>

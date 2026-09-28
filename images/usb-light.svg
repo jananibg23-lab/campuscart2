@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+      <defs>
+        <linearGradient id="silicone" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#3B82F6" />
+          <stop offset="100%" stop-color="#1D4ED8" />
+        </linearGradient>
+        <filter id="usb-shadow">
+          <feDropShadow dx="2" dy="12" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.12" />
+        </filter>
+      </defs>
+      <rect width="600" height="500" fill="#F8FAFC" rx="24"/>
+      <!-- Soft ambient glow -->
+      <ellipse cx="380" cy="180" rx="90" ry="70" fill="#FEF08A" opacity="0.3"/>
+      <g filter="url(#usb-shadow)">
+        <!-- Flexible Gooseneck -->
+        <path d="M 220 370 C 220 280, 260 220, 360 210" fill="none" stroke="url(#silicone)" stroke-width="22" stroke-linecap="round"/>
+        <!-- USB Type-A connector at bottom -->
+        <g transform="translate(202, 360)">
+          <rect x="0" y="0" width="36" height="40" rx="4" fill="#E2E8F0" stroke="#CBD5E1"/>
+          <rect x="8" y="10" width="20" height="12" fill="#0F172A"/>
+          <line x1="12" y1="12" x2="12" y2="18" stroke="#F8FAFC" stroke-width="2"/>
+          <line x1="24" y1="12" x2="24" y2="18" stroke="#F8FAFC" stroke-width="2"/>
+        </g>
+        <!-- Light head with LEDs -->
+        <g transform="translate(340, 160) rotate(15)">
+          <rect x="0" y="0" width="100" height="34" rx="12" fill="#1E40AF"/>
+          <rect x="10" y="8" width="80" height="18" rx="6" fill="#FFFFFF"/>
+          <circle cx="22" cy="17" r="4" fill="#FDE047"/>
+          <circle cx="36" cy="17" r="4" fill="#FDE047"/>
+          <circle cx="50" cy="17" r="4" fill="#FDE047"/>
+          <circle cx="64" cy="17" r="4" fill="#FDE047"/>
+          <circle cx="78" cy="17" r="4" fill="#FDE047"/>
+        </g>
+      </g>
+    </svg>

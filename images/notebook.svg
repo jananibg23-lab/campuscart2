@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+      <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#F1F5F9" />
+          <stop offset="100%" stop-color="#E2E8F0" />
+        </linearGradient>
+        <linearGradient id="cover" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0F172A" />
+          <stop offset="100%" stop-color="#1E293B" />
+        </linearGradient>
+        <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#F59E0B" />
+          <stop offset="100%" stop-color="#D97706" />
+        </linearGradient>
+        <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+          <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#0F172A" flood-opacity="0.15" />
+        </filter>
+      </defs>
+      <rect width="600" height="500" fill="url(#bg)" rx="24"/>
+      <g transform="translate(170, 75)" filter="url(#shadow)">
+        <!-- Pages edge -->
+        <rect x="25" y="8" width="230" height="330" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+        <line x1="250" y1="15" x2="250" y2="330" stroke="#94A3B8" stroke-dasharray="3 3"/>
+        <!-- Hardcover -->
+        <rect x="10" y="0" width="235" height="345" rx="12" fill="url(#cover)"/>
+        <!-- Spine -->
+        <rect x="10" y="0" width="25" height="345" rx="4" fill="#020617"/>
+        <line x1="35" y1="0" x2="35" y2="345" stroke="#334155" stroke-width="1.5"/>
+        <!-- Ribbon bookmark -->
+        <path d="M 120 0 L 120 360 L 128 350 L 136 360 L 136 0 Z" fill="#2563EB" opacity="0.9"/>
+        <!-- Embossed title -->
+        <rect x="70" y="110" width="115" height="2" fill="url(#gold)" opacity="0.6"/>
+        <text x="127" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="middle" letter-spacing="3">CAMPUS</text>
+        <text x="127" y="165" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#94A3B8" text-anchor="middle" letter-spacing="1.5">RULED JOURNAL</text>
+        <rect x="70" y="185" width="115" height="2" fill="url(#gold)" opacity="0.6"/>
+        <!-- Elastic band -->
+        <rect x="210" y="0" width="14" height="345" rx="3" fill="#2563EB" opacity="0.9"/>
+      </g>
+    </svg>

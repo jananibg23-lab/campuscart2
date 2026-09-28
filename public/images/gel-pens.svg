@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+      <defs>
+        <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#F8FAFC" />
+          <stop offset="100%" stop-color="#EEF2F6" />
+        </linearGradient>
+        <filter id="preshadow">
+          <feDropShadow dx="3" dy="10" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.12" />
+        </filter>
+      </defs>
+      <rect width="600" height="500" fill="url(#bg2)" rx="24"/>
+      <!-- Set of 5 luxury gel pens -->
+      <g transform="translate(140, 60)" filter="url(#preshadow)">
+        <!-- Pen 1: Deep Navy -->
+        <g transform="translate(0, 0) rotate(15, 100, 200)">
+          <rect x="30" y="40" width="18" height="270" rx="9" fill="#1E3A8A"/>
+          <path d="M 30 40 L 39 10 L 48 40 Z" fill="#94A3B8"/>
+          <path d="M 38 10 L 39 4 L 40 10 Z" fill="#0F172A"/>
+          <rect x="30" y="80" width="18" height="30" fill="#3B82F6"/>
+          <rect x="36" y="70" width="6" height="50" rx="3" fill="#E2E8F0"/>
+        </g>
+        <!-- Pen 2: Emerald Green -->
+        <g transform="translate(50, -5) rotate(15, 100, 200)">
+          <rect x="30" y="40" width="18" height="270" rx="9" fill="#065F46"/>
+          <path d="M 30 40 L 39 10 L 48 40 Z" fill="#94A3B8"/>
+          <path d="M 38 10 L 39 4 L 40 10 Z" fill="#0F172A"/>
+          <rect x="30" y="80" width="18" height="30" fill="#10B981"/>
+          <rect x="36" y="70" width="6" height="50" rx="3" fill="#E2E8F0"/>
+        </g>
+        <!-- Pen 3: Crimson Red -->
+        <g transform="translate(100, -10) rotate(15, 100, 200)">
+          <rect x="30" y="40" width="18" height="270" rx="9" fill="#991B1B"/>
+          <path d="M 30 40 L 39 10 L 48 40 Z" fill="#94A3B8"/>
+          <path d="M 38 10 L 39 4 L 40 10 Z" fill="#0F172A"/>
+          <rect x="30" y="80" width="18" height="30" fill="#EF4444"/>
+          <rect x="36" y="70" width="6" height="50" rx="3" fill="#E2E8F0"/>
+        </g>
+        <!-- Pen 4: Classic Black -->
+        <g transform="translate(150, -15) rotate(15, 100, 200)">
+          <rect x="30" y="40" width="18" height="270" rx="9" fill="#18181B"/>
+          <path d="M 30 40 L 39 10 L 48 40 Z" fill="#94A3B8"/>
+          <path d="M 38 10 L 39 4 L 40 10 Z" fill="#0F172A"/>
+          <rect x="30" y="80" width="18" height="30" fill="#71717A"/>
+          <rect x="36" y="70" width="6" height="50" rx="3" fill="#E2E8F0"/>
+        </g>
+        <!-- Pen 5: Violet -->
+        <g transform="translate(200, -20) rotate(15, 100, 200)">
+          <rect x="30" y="40" width="18" height="270" rx="9" fill="#5B21B6"/>
+          <path d="M 30 40 L 39 10 L 48 40 Z" fill="#94A3B8"/>
+          <path d="M 38 10 L 39 4 L 40 10 Z" fill="#0F172A"/>
+          <rect x="30" y="80" width="18" height="30" fill="#8B5CF6"/>
+          <rect x="36" y="70" width="6" height="50" rx="3" fill="#E2E8F0"/>
+        </g>
+      </g>
+    </svg>

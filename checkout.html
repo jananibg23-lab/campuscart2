@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout – CampusCart</title>
+  <meta name="description" content="Provide your campus shipping address and complete your student order with Cash or Pay on Delivery." />
+  <meta property="og:title" content="Checkout – CampusCart" />
+  <meta property="og:description" content="Quick and easy student campus delivery checkout." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Trust Bar -->
+  <div class="top-bar-trust">
+    <span>🎓 Special Campus Discount · Free delivery on all student orders above ₹499 · Pay on Delivery available</span>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand" aria-label="CampusCart Home">
+          <div class="brand-icon">🎓</div>
+          <span>Campus<span class="accent">Cart</span></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn" aria-label="View shopping cart">
+            <span class="cart-icon">🛒</span>
+            <span>Cart</span>
+            <span class="cart-badge" id="cart-count">0</span>
+          </a>
+          <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Shop</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="cart.html" class="nav-link">View Cart</a>
+    </div>
+  </header>
+
+  <!-- Checkout Container -->
+  <main class="container" style="padding-top: 2.5rem; padding-bottom: 5rem;">
+    <div style="margin-bottom: 2rem;">
+      <h1 style="font-size: 2.15rem; font-weight: 800; letter-spacing: -0.02em;">Campus Delivery & Checkout</h1>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">Enter your university hostel, department, or home delivery details.</p>
+    </div>
+
+    <div id="checkout-page-container">
+      <div class="checkout-grid">
+        <!-- Left: Delivery & Payment Details Form -->
+        <div class="checkout-card">
+          <form id="checkout-form" novalidate>
+            <h3>📍 Student Delivery Address</h3>
+
+            <div class="form-group">
+              <label for="customer-name" class="form-label">Full Name <span class="req">*</span></label>
+              <input type="text" id="customer-name" class="form-input" placeholder="e.g. Aarav Sharma" required />
+              <div class="form-error-msg" id="name-error">Please enter your full name (at least 2 characters).</div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="customer-email" class="form-label">Email Address <span class="req">*</span></label>
+                <input type="email" id="customer-email" class="form-input" placeholder="student@university.edu" required />
+                <div class="form-error-msg" id="email-error">Please enter a valid email address.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="customer-phone" class="form-label">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="customer-phone" class="form-input" placeholder="10-digit mobile number" maxlength="10" required />
+                <div class="form-error-msg" id="phone-error">Please enter a valid 10-digit Indian phone number.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="customer-address" class="form-label">Hostel / Campus / Street Address <span class="req">*</span></label>
+              <textarea id="customer-address" class="form-textarea" rows="2" placeholder="Hostel Block B, Room 304, University North Campus" required></textarea>
+              <div class="form-error-msg" id="address-error">Please enter a complete delivery address.</div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="customer-city" class="form-label">City <span class="req">*</span></label>
+                <input type="text" id="customer-city" class="form-input" placeholder="e.g. Bengaluru" required />
+                <div class="form-error-msg" id="city-error">Please enter your city.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="customer-state" class="form-label">State <span class="req">*</span></label>
+                <input type="text" id="customer-state" class="form-input" placeholder="e.g. Karnataka" required />
+                <div class="form-error-msg" id="state-error">Please enter your state.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="customer-pincode" class="form-label">PIN Code <span class="req">*</span></label>
+              <input type="text" id="customer-pincode" class="form-input" placeholder="6-digit postal code" maxlength="6" required />
+              <div class="form-error-msg" id="pincode-error">Please enter a valid 6-digit PIN code.</div>
+            </div>
+
+            <!-- Payment Options -->
+            <div style="margin-top: 2rem; border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
+              <h3>💳 Payment Method</h3>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+                No upfront online payment required! Pay comfortably when your order arrives.
+              </p>
+
+              <div class="payment-methods-grid">
+                <label class="payment-option selected">
+                  <input type="radio" name="payment_method" value="Cash on Delivery" checked />
+                  <div>
+                    <strong style="display: block; font-size: 0.95rem; color: var(--text-main);">Cash on Delivery</strong>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Pay cash to delivery courier</span>
+                  </div>
+                </label>
+
+                <label class="payment-option">
+                  <input type="radio" name="payment_method" value="Pay on Delivery (UPI / Card)" />
+                  <div>
+                    <strong style="display: block; font-size: 0.95rem; color: var(--text-main);">Pay on Delivery</strong>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Scan QR / UPI / Card on arrival</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <button type="submit" class="btn btn-primary btn-lg btn-full" id="place-order-btn">
+                Place Order Now →
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right: Order Summary Sidebar -->
+        <div class="checkout-card" style="position: sticky; top: 90px;">
+          <h3>Your Order Summary</h3>
+
+          <div class="checkout-items-list" id="checkout-items-list">
+            <!-- Populated dynamically via js/script.js -->
+          </div>
+
+          <div style="margin-top: 1rem;">
+            <div class="summary-line-row">
+              <span>Items Subtotal</span>
+              <span id="checkout-subtotal" class="tabular-nums" style="font-weight: 700;">₹0</span>
+            </div>
+
+            <div class="summary-line-row">
+              <span>Delivery Charge</span>
+              <span id="checkout-delivery">₹0</span>
+            </div>
+
+            <div class="summary-line-row">
+              <span>Student Benefit</span>
+              <span class="free-shipping-tag">Campus Verified</span>
+            </div>
+
+            <div class="summary-line-row total-row">
+              <span>Final Total</span>
+              <span id="checkout-total" class="tabular-nums" style="color: var(--primary);">₹0</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; background: var(--bg-subtle); padding: 1rem; border-radius: var(--radius-md); font-size: 0.82rem; color: var(--text-muted);">
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.2rem;">📦 Estimated Delivery:</div>
+            <div>2–3 business days directly to your hostel/campus address.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🎓 CampusCart</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
+            The dedicated shopping store built by students, for students. Delivering reliable academic and everyday college gear right to campus gates.
+          </p>
+          <div style="font-size: 0.85rem; color: #64748B;">
+            Campus Support Desk · Open Mon–Sat 9AM–6PM
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">View Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Study+Essentials">Study Essentials</a></li>
+            <li><a href="products.html?category=Tech+Accessories">Tech Accessories</a></li>
+            <li><a href="products.html?category=College+Essentials">College Essentials</a></li>
+            <li><a href="products.html?category=Lifestyle">Lifestyle</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Campus Support</h4>
+          <ul class="footer-links">
+            <li><span>📍 Student Center, Room 204</span></li>
+            <li><span>✉️ support@campuscart.store</span></li>
+            <li><span>📞 +91 98765 43210</span></li>
+            <li><span style="color: var(--accent);">✓ Pay on Delivery Available</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 CampusCart. Designed for college students everywhere.</div>
+        <div style="color: #64748B;">Made with HTML5, CSS3 & Vanilla JavaScript</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

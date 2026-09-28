@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details – CampusCart</title>
+  <meta name="description" content="View detailed product specifications, student reviews, and pricing for college essentials at CampusCart." />
+  <meta property="og:title" content="Product Details – CampusCart" />
+  <meta property="og:description" content="Explore product details and student discounts at CampusCart." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Trust Bar -->
+  <div class="top-bar-trust">
+    <span>🎓 Special Campus Discount · Free delivery on all student orders above ₹499 · Pay on Delivery available</span>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand" aria-label="CampusCart Home">
+          <div class="brand-icon">🎓</div>
+          <span>Campus<span class="accent">Cart</span></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link active">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn" aria-label="View shopping cart">
+            <span class="cart-icon">🛒</span>
+            <span>Cart</span>
+            <span class="cart-badge" id="cart-count">0</span>
+          </a>
+          <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link active">Shop</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="cart.html" class="nav-link">View Cart</a>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" id="pdp-breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="products.html">Shop</a>
+      <span aria-hidden="true">/</span>
+      <span>Product Details</span>
+    </nav>
+
+    <!-- Dynamic Product Details Section -->
+    <div id="pdp-content">
+      <!-- Populated dynamically via js/script.js -->
+    </div>
+
+    <!-- Related Products -->
+    <section style="margin-top: 4rem; margin-bottom: 5rem; border-top: 1px solid var(--border-light); padding-top: 3rem;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.75rem;">
+        <div>
+          <div class="section-kicker">You Might Also Need</div>
+          <h2 style="font-size: 1.6rem; font-weight: 800; color: var(--text-main);">Related College Essentials</h2>
+        </div>
+        <a href="products.html" class="btn btn-secondary btn-sm">View All →</a>
+      </div>
+
+      <div class="product-grid" id="related-products-grid">
+        <!-- Populated dynamically via js/script.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🎓 CampusCart</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
+            The dedicated shopping store built by students, for students. Delivering reliable academic and everyday college gear right to campus gates.
+          </p>
+          <div style="font-size: 0.85rem; color: #64748B;">
+            Campus Support Desk · Open Mon–Sat 9AM–6PM
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">View Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Study+Essentials">Study Essentials</a></li>
+            <li><a href="products.html?category=Tech+Accessories">Tech Accessories</a></li>
+            <li><a href="products.html?category=College+Essentials">College Essentials</a></li>
+            <li><a href="products.html?category=Lifestyle">Lifestyle</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Campus Support</h4>
+          <ul class="footer-links">
+            <li><span>📍 Student Center, Room 204</span></li>
+            <li><span>✉️ support@campuscart.store</span></li>
+            <li><span>📞 +91 98765 43210</span></li>
+            <li><span style="color: var(--accent);">✓ Pay on Delivery Available</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 CampusCart. Designed for college students everywhere.</div>
+        <div style="color: #64748B;">Made with HTML5, CSS3 & Vanilla JavaScript</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Products – CampusCart Student Store</title>
+  <meta name="description" content="Browse our complete catalog of 12+ student college products including backpacks, notebooks, headphones, and study lamps." />
+  <meta property="og:title" content="All Products – CampusCart Student Store" />
+  <meta property="og:description" content="Affordable academic, tech and everyday college gear for students." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Trust Bar -->
+  <div class="top-bar-trust">
+    <span>🎓 Special Campus Discount · Free delivery on all student orders above ₹499 · Pay on Delivery available</span>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand" aria-label="CampusCart Home">
+          <div class="brand-icon">🎓</div>
+          <span>Campus<span class="accent">Cart</span></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link active">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn" aria-label="View shopping cart">
+            <span class="cart-icon">🛒</span>
+            <span>Cart</span>
+            <span class="cart-badge" id="cart-count">0</span>
+          </a>
+          <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link active">Shop</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="cart.html" class="nav-link">View Cart</a>
+    </div>
+  </header>
+
+  <!-- Shop Header & Interactive Controls -->
+  <div class="shop-header-area">
+    <div class="container">
+      <div style="margin-bottom: 1rem;">
+        <h1 style="font-size: 2.15rem; font-weight: 800; letter-spacing: -0.02em;">College Essentials Catalog</h1>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Curated academic and lifestyle gear priced specially for university students.</p>
+      </div>
+
+      <div class="shop-filter-bar">
+        <!-- Search and Sort Row -->
+        <div class="shop-controls-row">
+          <div class="search-wrapper">
+            <span class="search-icon-svg">🔍</span>
+            <input
+              type="text"
+              id="search-input"
+              class="search-input"
+              placeholder="Search backpacks, notebooks, lamps, pens..."
+              aria-label="Search products"
+            />
+            <button type="button" id="clear-search-btn" class="clear-search-btn" aria-label="Clear search input">✕</button>
+          </div>
+
+          <div class="sort-wrapper">
+            <label for="sort-select" class="sort-label">Sort by:</label>
+            <select id="sort-select" class="sort-select">
+              <option value="featured">Featured Picks</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating-desc">Highest Rated</option>
+              <option value="name-asc">Name: A to Z</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="category-tabs" role="tablist" aria-label="Product categories">
+          <button type="button" class="category-tab-btn active" data-category="All">All Items</button>
+          <button type="button" class="category-tab-btn" data-category="Study Essentials">Study Essentials</button>
+          <button type="button" class="category-tab-btn" data-category="Tech Accessories">Tech Accessories</button>
+          <button type="button" class="category-tab-btn" data-category="College Essentials">College Essentials</button>
+          <button type="button" class="category-tab-btn" data-category="Lifestyle">Lifestyle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Products Main Grid Area -->
+  <main class="container" style="padding-top: 1.5rem; padding-bottom: 5rem;">
+    <div class="products-count-label" id="products-count">Showing 12 of 12 products</div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="products-grid">
+      <!-- Populated dynamically via js/script.js -->
+    </div>
+
+    <!-- Empty Search Results State -->
+    <div class="empty-state" id="products-empty-state" style="display: none;">
+      <div class="empty-state-icon">🔎</div>
+      <h3>No Products Found</h3>
+      <p>We couldn't find any items matching your search or filter. Try a different keyword or view all categories.</p>
+      <button type="button" class="btn btn-primary" onclick="document.querySelector('[data-category=\'All\']').click(); document.getElementById('search-input').value = '';">
+        Reset All Filters
+      </button>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🎓 CampusCart</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
+            The dedicated shopping store built by students, for students. Delivering reliable academic and everyday college gear right to campus gates.
+          </p>
+          <div style="font-size: 0.85rem; color: #64748B;">
+            Campus Support Desk · Open Mon–Sat 9AM–6PM
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">View Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Study+Essentials">Study Essentials</a></li>
+            <li><a href="products.html?category=Tech+Accessories">Tech Accessories</a></li>
+            <li><a href="products.html?category=College+Essentials">College Essentials</a></li>
+            <li><a href="products.html?category=Lifestyle">Lifestyle</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Campus Support</h4>
+          <ul class="footer-links">
+            <li><span>📍 Student Center, Room 204</span></li>
+            <li><span>✉️ support@campuscart.store</span></li>
+            <li><span>📞 +91 98765 43210</span></li>
+            <li><span style="color: var(--accent);">✓ Pay on Delivery Available</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 CampusCart. Designed for college students everywhere.</div>
+        <div style="color: #64748B;">Made with HTML5, CSS3 & Vanilla JavaScript</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
